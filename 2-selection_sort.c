@@ -8,6 +8,9 @@
 
 void selection_sort(int *array, size_t size)
 {
+	if (size < 2 || array == NULL)
+		return;
+
 	size_t i, j, imin;
 	int temp;
 
